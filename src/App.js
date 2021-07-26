@@ -2,9 +2,9 @@ import Chat from './components/Chat';
 import Event from './components/Event';
 import Header from './components/Header';
 
-import logo from './logo.svg';
+
 import './App.css';
-import { Component } from 'react';
+
 
 function App() {
   return (
