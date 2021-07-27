@@ -33,24 +33,23 @@ header {
 main {
   grid-column: 2 / 3;
   min-width: max-content;
+  place-items: center
+
 }
 
-/* .right-side {
+.right-side {
   grid-column: 3 / 4;
   background-color: 	rgb(236, 255, 179);
 
-} */
-/* .conversation-flow {
-  max-width:100%;
-  max-height:100%;
+} 
 
-} */
-
-.list-group-item .list-group-item-action .list-group-item-primary{
-  border-radius: 1px;
-  background-color: blueviolet;
-
+.conversation-flow {
+  max-width:60%;
+  max-height:60%;
 }
+
+
+
 
 
 footer {

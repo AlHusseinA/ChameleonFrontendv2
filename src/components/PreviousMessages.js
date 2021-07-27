@@ -7,7 +7,7 @@ import useSWR from "swr";
 // debugger
 
 
-dummy = 1;
+// dummy = 1;
 const fetcher = url => fetch(url).then(res => res.json());
 
 
