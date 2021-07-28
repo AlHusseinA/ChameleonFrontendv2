@@ -48,7 +48,17 @@ main {
   max-height:60%;
 }
 
-
+.waves-effect.waves-light.btn{
+  background-color: #e1bee7;
+  border: 0.5px solid rgb(112, 17, 124);
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  width: 75%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
 
 
 
