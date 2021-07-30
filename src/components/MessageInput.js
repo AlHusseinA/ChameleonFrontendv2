@@ -6,7 +6,7 @@ import axios from 'axios';
 const MessageInput = () => {
   const [currentMessage, setCurrentMessage]= useState('');
   const BASE_URL = process.env.REACT_APP_API_ENDPOINT 
-  const url = `${BASE_URL}intentions/`
+  const url = `${BASE_URL}/intentions/`
 
   function handleSubmit(event) {
     event.preventDefault();
