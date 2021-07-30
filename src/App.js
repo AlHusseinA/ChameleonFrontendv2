@@ -57,19 +57,6 @@ function App() {
       });
   }
 
-  // function handleClick(event) {
-  //   // event.preventDefault();
-  //   console.log('Button click ...');
-  //   axios.post(url, {
-  //     message: "Hello, I'm Django. I'm one of the doctors here. What can I do for you today?"   
-  //   })
-  //     .then((response) => {
-  //       console.log(response);
-  //       setCurrentButtonMessage("");
-  //     }, (error) => {
-  //       console.log(error);
-  //     });
-  // }
 
 
 
