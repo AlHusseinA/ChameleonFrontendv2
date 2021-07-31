@@ -12,9 +12,9 @@ const fetcher = url => fetch(url).then(res => res.json());
 
 
 
-const PreviousMessages = () => {
+const PreviousMessages = ({conversationUuid}) => {
     const BASE_URL = process.env.REACT_APP_API_ENDPOINT 
-    const url = `${BASE_URL}/messages`
+    const url = `${BASE_URL}/messages/${conversationUuid}`
 
     const { data, error } = useSWR(
         url,

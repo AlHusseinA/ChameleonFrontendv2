@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 
-const MessageInput = () => {
+const MessageInput = ({conversationUuid}) => {
   const [currentMessage, setCurrentMessage]= useState('');
   const BASE_URL = process.env.REACT_APP_API_ENDPOINT 
   const url = `${BASE_URL}/intentions/`
@@ -12,7 +12,8 @@ const MessageInput = () => {
     event.preventDefault();
     
     axios.post(url, {
-      message: currentMessage
+      message: currentMessage, 
+      uuid: conversationUuid
     })
       .then((response) => {
         console.log(response);
