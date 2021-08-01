@@ -1,6 +1,7 @@
 import Chat from './components/Chat';
 import Event from './components/Event';
 import Header from './components/Header';
+import About from './components/About';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, { useState } from 'react';
 import axios from 'axios';
@@ -76,6 +77,7 @@ function App() {
           <br />
           
         </div>
+
         <Router>
           <Switch>
             <Route path="/chat">
@@ -86,12 +88,16 @@ function App() {
             <Route path="/">
               <Landing />
             </Route>
+            <Route path="about">
+              <About />
+            </Route>
           </Switch>
         </Router>
-        {/* <div className="right-side"> */}
-          {/* <img className="chameleon-icon" src={process.env.PUBLIC_URL + 'chameleonprod2.png'} alt="Write something here" /> */}
+
+        <div className="right-side">
+          <img className="Conversational_flow_v1" src={process.env.PUBLIC_URL + 'Conversational_flow_v1.png'} alt="Write something here" />
           {/* <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> */}
-        {/* </div> */}
+        </div>
       </div>
     </div>
   );
