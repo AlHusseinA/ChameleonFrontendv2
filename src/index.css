@@ -72,7 +72,7 @@ main {
   border-collapse: collapse;
 }
 
-.list-group-item.list-group-item-action.list-group-item-primary{
+/* .list-group-item.list-group-item-action.list-group-item-primary{
   width: 50px;
   height: 50px;
   float: left;
@@ -81,7 +81,7 @@ main {
   width: 50px;
   height: 50px;
   float: right;
-}
+} */
 footer {
   grid-column: 1 / 4;
 }
