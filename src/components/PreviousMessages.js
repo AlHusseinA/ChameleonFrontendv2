@@ -1,13 +1,7 @@
 import React from "react";
 import useSWR from "swr";
-// import process from "process";
 
 
-
-// debugger
-
-
-// dummy = 1;
 const fetcher = url => fetch(url).then(res => res.json());
 
 
