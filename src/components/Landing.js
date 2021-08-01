@@ -9,8 +9,6 @@ const Landing = () => (
     <div class="col-10">
         <button type="submit" class="btn btn-primary btn-lg">Agree and begin experiment</button>
       </div>
-
-
 </div>
 )
  
