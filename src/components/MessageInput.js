@@ -32,7 +32,7 @@ const MessageInput = ({conversationUuid}) => {
       </div>
 
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Ask Chameleon!</button>
       </div>
     </form>
   );

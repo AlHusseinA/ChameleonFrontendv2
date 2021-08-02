@@ -36,7 +36,8 @@ header {
 main {
   grid-column: 2 / 3;
   min-width: max-content;
-  place-items: center
+  place-items: center;
+  margin-left: 100px;
 
 }
 
@@ -72,9 +73,10 @@ main {
   font-size: 16px;
   color: rgb(245, 245, 245);
   cursor: pointer;
-  width: 75%;
+  width: 300px;
   table-layout: fixed;
   border-collapse: collapse;
+  margin-left: 50px;
 }
 
 /* .list-group-item.list-group-item-action.list-group-item-primary{

@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Landing from './components/Landing';
 import './App.css';
+import Questionnaire from './components/Questionnaire';
 
 function App() {
   let [currentButtonMessage, setCurrentButtonMessage] = useState('');
@@ -74,8 +75,7 @@ function App() {
           <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(4)}>Social and Lifestyle History</a><br />
           <br />
           <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(5)}>Hope and Final Summary</a><br />
-          <br />
-          
+          <br />          
         </div>
 
         <Router>
@@ -90,6 +90,9 @@ function App() {
             </Route>
             <Route path="about">
               <About />
+            </Route>
+            <Route path="questionnaire">
+              <Questionnaire />
             </Route>
           </Switch>
         </Router>
