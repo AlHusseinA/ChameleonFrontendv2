@@ -21,7 +21,7 @@ const PreviousMessages = ({conversationUuid}) => {
 
 
     return (
-        <div className="card">
+        <div className="card overflow-auto">
             <ul class="list-group list-group-flush">
                 {
                     data.map((item) => (
