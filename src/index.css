@@ -78,16 +78,21 @@ main {
   border-collapse: collapse;
   margin-left: 50px;
 }
+.card{
 
+  overflow: auto;
+}
 /* .list-group-item.list-group-item-action.list-group-item-primary{
   width: 50px;
   height: 50px;
   float: left;
+  overflow: visible;
 }
 .list-group-item.list-group-item-action.list-group-item-success{
   width: 50px;
   height: 50px;
   float: right;
+overflow: visible;
 } */
 footer {
   grid-column: 1 / 4;
