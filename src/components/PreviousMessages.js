@@ -22,7 +22,7 @@ const PreviousMessages = ({conversationUuid}) => {
 
     return (
         <div className="card">
-            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            
             <ul class="list-group list-group-flush">
                 {
                     data.map((item) => (
