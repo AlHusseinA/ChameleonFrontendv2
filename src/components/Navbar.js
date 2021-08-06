@@ -1,6 +1,6 @@
 import React from "react";
 
-const Event = () => {
+const Navbar = () => {
     return (
         <div class="sidebar-sticky">
             <ul class="nav flex-column mb-2">
@@ -29,4 +29,4 @@ const Event = () => {
     );
 }
 
-export default Event;
+export default Navbar;

@@ -3,16 +3,16 @@ import axios from 'axios';
 
 
 
-const MessageInput = ({conversationUuid}) => {
-  const [currentMessage, setCurrentMessage]= useState('');
-  const BASE_URL = process.env.REACT_APP_API_ENDPOINT 
+const MessageInput = ({ conversationUuid }) => {
+  const [currentMessage, setCurrentMessage] = useState('');
+  const BASE_URL = process.env.REACT_APP_API_ENDPOINT
   const url = `${BASE_URL}/intentions/`
 
   function handleSubmit(event) {
     event.preventDefault();
-    
+
     axios.post(url, {
-      message: currentMessage, 
+      message: currentMessage,
       uuid: conversationUuid
     })
       .then((response) => {
@@ -23,16 +23,25 @@ const MessageInput = ({conversationUuid}) => {
       });
   }
   return (
-    <form class="row row-cols-lg-auto g-3 align-items-center" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <div class="col-12">
         <label class="visually-hidden" for="inlineFormInputGroupUsername">Enter your question to the patient</label>
         <div class="input-group">
-          <input type="text" value={currentMessage} onChange={e=> setCurrentMessage(e.target.value)}  class="form-control" id="inlineFormInputGroupUsername" placeholder="Enter your question to the patient" />
+          <input type="text" value={currentMessage} onChange={e => setCurrentMessage(e.target.value)} class="form-control" id="inlineFormInputGroupUsername" placeholder="Enter your question to the patient" />
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="col-8">
+
         <button type="submit" class="btn btn-primary">Ask Chameleon!</button>
+
+
+        {/* <button class="btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Loading...
+        </button> */}
+
+
       </div>
     </form>
   );
