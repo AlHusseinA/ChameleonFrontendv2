@@ -27,7 +27,7 @@ const PreviousMessages = ({conversationUuid}) => {
                 {
                     data.map((item, idx) => (
                         (
-                            item.actor === 'Chameleon' ? <li key={idx} class="list-group-item list-group-item-action list-group-item-primary">{item.actor}-{item.message}</li> : <li class="list-group-item list-group-item-action list-group-item-success">{item.actor};{item.message}</li>
+                            item.actor === 'Chameleon' ? <li key={idx} class="list-group-item list-group-item-action list-group-item-primary">{item.actor}-{item.message}</li> : <li class="list-group-item list-group-item-action list-group-item-success">{item.actor}-{item.message}</li>
                         )
                     )
 
