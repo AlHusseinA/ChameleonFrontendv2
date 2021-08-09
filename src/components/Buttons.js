@@ -53,7 +53,7 @@ const EventButtons = ({conversationUuid}) => {
     return ( 
 
         <div>
-          <div className="container border border-info bg-primary text-white">
+          <div className="container border border-primary bg-dark text-white border border-5">
             <br /><h5><b> Patient info:</b></h5>
             <p><b>Name:</b> Jane Doe.</p>
             <p><b>Gender:</b> Female.</p>
