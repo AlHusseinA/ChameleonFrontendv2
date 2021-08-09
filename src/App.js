@@ -15,17 +15,19 @@ function App() {
   return (
     <div >
       <div >
-        <header>
-          <Header />
-        </header>
+
         <Router>
           <Switch>
             <Route path="/chat">
+            <header>
+          <Header />
+        </header>
               <main className="container-fluid">
                 <Chat />
               </main>
             </Route>
             <Route path="/">
+              
               <Landing />
             </Route>
             <Route path="about">
