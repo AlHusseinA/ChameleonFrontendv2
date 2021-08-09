@@ -14,12 +14,8 @@ const PreviousMessages = ({conversationUuid}) => {
         url,
         fetcher, { refreshInterval: 1000 }
     );
-
-
     if (error) return "An error has occurred.";
     if (!data) return "Loading...";
-
-
     return (
         <div className="card h-50 d-inline-block border border-primary mb-3" >
             
@@ -40,9 +36,6 @@ const PreviousMessages = ({conversationUuid}) => {
     );
 
 }
-
-
-
 
 export default PreviousMessages;
 

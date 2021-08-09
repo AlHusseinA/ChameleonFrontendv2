@@ -19,26 +19,28 @@ function App() {
         <Router>
           <Switch>
             <Route path="/chat">
-            <header>
-          <Header />
-        </header>
+              <header>
+                <Header />
+              </header>
               <main className="container-fluid">
                 <Chat />
               </main>
             </Route>
-            <Route path="/">
-              
-              <Landing />
-            </Route>
-            <Route path="about">
+            <Route path="/about">
               <About />
             </Route>
-            <Route path="questionnaire">
-              <Questionnaire />
+            <Route path="/">
+              <Landing />
             </Route>
+
+            {/* <Route path="questionnaire">
+              <Questionnaire />
+            </Route> */}
           </Switch>
         </Router>
-
+        {/* <header>
+          <Navbar />
+        </header>   */}
 
       </div>
     </div>

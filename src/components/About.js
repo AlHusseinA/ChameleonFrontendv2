@@ -3,6 +3,7 @@ import React from 'react';
 
 
 const About = () => (
+    <div className="container">
     <div style={{ textAlign: 'center' }}>
                         <br /><br /><h1>Chameleon – A virtual standardised patient</h1><br /><br />
                 <p style={{ textAlign: 'left' }}>
@@ -73,11 +74,9 @@ const About = () => (
                     <p style={{ textAlign: 'left' }}>
                     This research project was approved by the Physical Sciences and Engineering Ethics Board on XXXX..
                     </p><br />
-
-
                 </p>
     </div>
-
+    </div>
 )
 
 export default About;
