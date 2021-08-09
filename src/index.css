@@ -97,5 +97,10 @@ overflow: visible;
 footer {
   grid-column: 1 / 4;
 }
+p.consent {
+  /* text-indent: 50px;
+  text-justify: auto; */
+  margin-left: 170px;
+  margin-right: 200px;
 
-
+}
