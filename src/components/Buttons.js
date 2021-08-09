@@ -32,7 +32,7 @@ const EventButtons = ({conversationUuid}) => {
         break;
 
       default:
-        currentButtonMessage = "I'd' like to inquire more about your gambling habits";
+        currentButtonMessage = "REMOVE THIS";
 
     }
     console.log(currentButtonMessage)

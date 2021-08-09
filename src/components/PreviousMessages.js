@@ -21,7 +21,7 @@ const PreviousMessages = ({conversationUuid}) => {
 
 
     return (
-        <div className="card h-50 d-inline-block border border-dark mb-3" >
+        <div className="card h-50 d-inline-block border border-primary mb-3" >
             
             <ul class="list-group list-group-flush">
                 {
