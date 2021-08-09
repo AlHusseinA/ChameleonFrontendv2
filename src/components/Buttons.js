@@ -52,8 +52,15 @@ const EventButtons = ({conversationUuid}) => {
   }
     return ( 
 
-        <div >
-         
+        <div>
+          <div className="container border border-info">
+            <h5><b> Patient info:</b></h5>
+            <p><b>Name:</b> Jane Doe.</p>
+            <p><b>Gender:</b> Female.</p>
+            <p><b>Age:</b> 54.</p>
+            <p><b>Presenting Complaint:</b> Complains of lower back pain.</p>
+          </div>
+        <div>
         <br />
         <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(7)}>Presenting Complaint</a><br />
         <br />
@@ -66,7 +73,9 @@ const EventButtons = ({conversationUuid}) => {
         <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(4)}>Social and Lifestyle History</a><br />
         <br />
         <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(5)}>Hope and Final Summary</a><br />
-        <br /><br /><Navbar />          
+        <br /><br />
+        </div>
+        <Navbar /> 
       </div>
 
      );

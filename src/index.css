@@ -82,18 +82,11 @@ main {
 
   overflow: auto;
 }
-/* .list-group-item.list-group-item-action.list-group-item-primary{
-  width: 50px;
-  height: 50px;
-  float: left;
-  overflow: visible;
+
+.container.border.border-info{
+  margin-left: 50px;
+  
 }
-.list-group-item.list-group-item-action.list-group-item-success{
-  width: 50px;
-  height: 50px;
-  float: right;
-overflow: visible;
-} */
 footer {
   grid-column: 1 / 4;
 }
