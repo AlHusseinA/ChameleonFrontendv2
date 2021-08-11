@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
 
-const EventButtons = ({conversationUuid}) => {
+const EventButtons = ({ conversationUuid }) => {
   let [currentButtonMessage, setCurrentButtonMessage] = useState('');
   const BASE_URL = process.env.REACT_APP_API_ENDPOINT
   const url = `${BASE_URL}/intentions/`
@@ -28,8 +28,23 @@ const EventButtons = ({conversationUuid}) => {
         break;
 
       case 5:
-        currentButtonMessage = "Hope and dreams";
+        currentButtonMessage = "Ideas, Concerns, and Expectations";
         break;
+      // case 6:
+      //   currentButtonMessage = "Functional Enquiry";
+      //   break;
+      // case 7:
+      //   currentButtonMessage = "Cardiorespiratory Enquiry";
+      //   break;
+      // case 8:
+      //   currentButtonMessage = "Gastrointestinal Enquiry";
+      //   break;
+      // case 9:
+      //   currentButtonMessage = "Genitourinary Enquiry";
+      //   break;
+      // case 10:
+      //   currentButtonMessage = "Neurological Enquiry";
+      //   break;
 
       default:
         currentButtonMessage = "I'd like to ask you more questions about the Presenting Complaint. ";
@@ -50,17 +65,17 @@ const EventButtons = ({conversationUuid}) => {
         console.log(error);
       });
   }
-    return ( 
+  return (
 
-        <div>
-          <div className="container border border-primary bg-dark text-white border border-5">
-            <br /><h5><b> Patient info:</b></h5>
-            <p><b>Name:</b> Jane Doe.</p>
-            <p><b>Gender:</b> Female.</p>
-            <p><b>Age:</b> 54.</p>
-            <p><b>Presenting Complaint:</b> Complains of lower back pain. Reported exccessive drinking issues in the past</p>
-          </div>
-        <div>
+    <div>
+      <div className="container border border-primary bg-dark text-white border border-5">
+        <br /><h5><b> Patient info:</b></h5>
+        <p><b>Name:</b> Jane Doe.</p>
+        <p><b>Gender:</b> Female.</p>
+        <p><b>Age:</b> 54.</p>
+        <p><b>Presenting Complaint:</b> Complains of lower back pain. Reported exccessive drinking issues in the past</p>
+      </div>
+      <div>
         <br />
         <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(7)}>Presenting Complaint</a><br />
         <br />
@@ -72,13 +87,24 @@ const EventButtons = ({conversationUuid}) => {
         <br />
         <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(4)}>Social and Lifestyle History</a><br />
         <br />
-        <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(5)}>Ideas, Concerns, and Expectations (ICE)</a><br /> 
-        <br /> 
-        </div>
-        <Navbar /> 
-      </div>
+        <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(5)}>Ideas, Concerns, and Expectations (ICE)</a><br />
+        <br />
+        {/* <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(6)}>Functional Enquiry (general)</a><br />
+        <br />
+        <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(7)}>Cardiorespiratory Enquiry</a><br />
+        <br />
+        <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(8)}>Gastrointestinal Enquiry</a><br />
+        <br />
+        <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(9)}>Genitourinary Enquiry</a><br />
+        <br />
+        <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(10)}>Neurological Enquiry</a><br />
+        <br /> */}
 
-     );
+      </div>
+      <Navbar />
+    </div>
+
+  );
 }
- 
+
 export default EventButtons;

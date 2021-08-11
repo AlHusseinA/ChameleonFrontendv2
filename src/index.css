@@ -87,6 +87,11 @@ main {
   margin-left: 55px;
   
 }
+/* .myscroll {
+      height: 600px;
+      width: 400px;
+
+} */
 footer {
   grid-column: 1 / 4;
 }
