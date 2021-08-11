@@ -72,7 +72,7 @@ const About = () => (
                     <br />
 
                     <p style={{ textAlign: 'left' }}>
-                    This research project was approved by the Physical Sciences and Engineering Ethics Board on XXXX..
+                    This research project was approved by the Physical Sciences and Engineering Ethics Board on Monday 9th August 2021.
                     </p><br />
                 </p>
     </div>

@@ -1,5 +1,6 @@
 import Chat from './components/Chat';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
+import Instructions from './components/Instructions';
 import Header from './components/Header';
 import About from './components/About';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -7,7 +8,6 @@ import React, { useState } from 'react';
 
 import Landing from './components/Landing';
 import './App.css';
-import Questionnaire from './components/Questionnaire';
 
 function App() {
 
@@ -25,6 +25,9 @@ function App() {
               <main className="container-fluid">
                 <Chat />
               </main>
+       
+                {/* <Instructions /> */}
+
             </Route>
             <Route path="/about">
               <About />
@@ -33,14 +36,8 @@ function App() {
               <Landing />
             </Route>
 
-            {/* <Route path="questionnaire">
-              <Questionnaire />
-            </Route> */}
           </Switch>
         </Router>
-        {/* <header>
-          <Navbar />
-        </header>   */}
 
       </div>
     </div>

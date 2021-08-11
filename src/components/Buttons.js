@@ -58,7 +58,7 @@ const EventButtons = ({conversationUuid}) => {
             <p><b>Name:</b> Jane Doe.</p>
             <p><b>Gender:</b> Female.</p>
             <p><b>Age:</b> 54.</p>
-            <p><b>Presenting Complaint:</b> Complains of lower back pain.</p>
+            <p><b>Presenting Complaint:</b> Complains of lower back pain. Reported exccessive drinking issues in the past</p>
           </div>
         <div>
         <br />
@@ -72,8 +72,8 @@ const EventButtons = ({conversationUuid}) => {
         <br />
         <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(4)}>Social and Lifestyle History</a><br />
         <br />
-        <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(5)}>Hope and Final Summary</a><br />
-        <br />
+        <a class="waves-effect waves-light btn" type="button" onClick={() => transitionSection(5)}>Ideas, Concerns, and Expectations (ICE)</a><br /> 
+        <br /> 
         </div>
         <Navbar /> 
       </div>
