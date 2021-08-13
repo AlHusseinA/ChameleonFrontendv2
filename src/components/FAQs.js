@@ -6,22 +6,11 @@ const FAQs = () => (
     <div className="container">
 
         <br /><br /><br />
-        <h1 style={{ textAlign: 'center' }}>Frequently Asked Questions</h1><br />
+        <h1 className="text-primary" style={{ textAlign: 'center' }}>Frequently Asked Questions</h1><br />
         <br /><br />
 
 
-        <h6 class="text-primary" style={{ textAlign: 'left' }, { fontWeight: 'bold' }}><li>Why is it called Chameleon?</li></h6>
-        <p style={{ textAlign: 'left' }}>
-            In the context of chatbot design, an intent is the meaning behind the user’s linguistic utterance. For example, the sentences “I have a headache” and “my head aches”, thought different syntactically, are near identical semantically.
-        </p>
-        <h6 class="text-primary" style={{ textAlign: 'left' }, { fontWeight: 'bold' }}><li>What Artificial Intelligence technology does Chameleon use?</li></h6>
-        <p style={{ textAlign: 'left' }}>
-            In the context of chatbot design, an intent is the meaning behind the user’s linguistic utterance. For example, the sentences “I have a headache” and “my head aches”, thought different syntactically, are near identical semantically.
-        </p>
-
-
-        <h1 style={{ textAlign: 'center' }}>Frequently Asked Questions</h1><br />
-        <br /><br />
+    
         <ul class="list-group list-group-flush">
             <li class="list-group-item text-primary"><h6 style={{ textAlign: 'left' }, { fontWeight: 'bold' }}>
                 What is Chameleon?</h6>
