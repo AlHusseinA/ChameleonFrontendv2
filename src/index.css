@@ -15,7 +15,7 @@ code {
 
 
 .parent {
-  background-image: url('background2.jpg');
+  /* background-image: url('background2.jpg'); */
   background-size: 100%;
   display: grid;
   grid-template: auto 1fr auto / auto 1fr auto;

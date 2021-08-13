@@ -69,11 +69,17 @@ const EventButtons = ({ conversationUuid }) => {
 
     <div>
       <div className="container border border-primary bg-dark text-white border border-5">
+        <div className="container">
+          <br />
+        <img  class="img-thumbnail float-right" src={process.env.PUBLIC_URL + 'John Doe.png'} alt="AI generated image of John-Doe"/>
+
+        </div>
         <br /><h5><b> Patient info:</b></h5>
-        <p><b>Name:</b> Jane Doe.</p>
-        <p><b>Gender:</b> Female.</p>
-        <p><b>Age:</b> 54.</p>
-        <p><b>Presenting Complaint:</b> Complains of lower back pain. Reported exccessive drinking issues in the past</p>
+        <p><b>Name:</b> John Doe.</p>
+        <p><b>Gender:</b> Male.</p>
+        <p><b>Age:</b> 52.</p>
+        <p><b>DOB:</b> 07/03/1969</p>
+        <p><b>Presenting Complaint:</b> Injured lower back while exercising.</p>
       </div>
       <div>
         <br />
