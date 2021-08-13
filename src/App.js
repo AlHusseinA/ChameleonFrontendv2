@@ -1,11 +1,11 @@
 import Chat from './components/Chat';
 // import Navbar from './components/Navbar';
-import Instructions from './components/Instructions';
+// import Instructions from './components/Instructions';
 import Header from './components/Header';
 import About from './components/About';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React, { useState } from 'react';
-
+import FAQs from './components/FAQs';
 import Landing from './components/Landing';
 import './App.css';
 
@@ -26,8 +26,11 @@ function App() {
                 <Chat />
               </main>
        
-                {/* <Instructions /> */}
+                
 
+            </Route>
+            <Route path="/faqs">
+              <FAQs />
             </Route>
             <Route path="/about">
               <About />

@@ -4,7 +4,7 @@ import PreviousMessages from "./PreviousMessages";
 import { v4 as uuidv4 } from 'uuid';
 // import Navbar from "./Navbar";
 import Buttons from "./Buttons"
-import Instructions from "./Instructions";
+// import Instructions from "./Instructions";
 
 
 const Chat = () => {
