@@ -77,8 +77,8 @@ const EventButtons = ({ conversationUuid }) => {
         <br /><h5><b> Patient info:</b></h5>
         <p><b>Name:</b> John Doe.</p>
         <p><b>Gender:</b> Male.</p>
-        <p><b>Age:</b> 52.</p>
-        <p><b>DOB:</b> 07/03/1969</p>
+        <p><b>Age:</b> 43.</p>
+        <p><b>DOB:</b> 06/02/1969</p>
         <p><b>Presenting Complaint:</b> Injured lower back while exercising.</p>
       </div>
       <div>
