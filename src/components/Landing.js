@@ -49,7 +49,7 @@ export default function Landing() {
                 </p><br />
                 <div class="col align-self-center">
                     <br />
-                    <button type="submit" class="btn btn-primary btn-lg" onClick={handleClick}> 	I confirm that I have read and understood the above statements (check the box).</button><br /><br /><br /><br /><br />
+                    <button type="submit" class="btn btn-primary btn-lg" onClick={handleClick}> 	I confirm that I have read and understood the above statements (click here).</button><br /><br /><br /><br /><br />
                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 </div>
             </div>

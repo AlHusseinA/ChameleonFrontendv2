@@ -1,12 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import useSWR from "swr";
-
-// import { css } from 'emotion';
-// import ScrollToBottom from 'react-scroll-to-bottom';
-// const ROOT_CSS = css({
-//     height: 600,
-//     width: 400
-//   });
 
 
 const fetcher = url => fetch(url).then(res => res.json());
@@ -21,11 +14,24 @@ const PreviousMessages = ({conversationUuid}) => {
         url,
         fetcher, { refreshInterval: 1000 }
     );
+    const chatEndRef = useRef(null);
+    const ScrollToBottom = () =>{
+        // debugger
+        if (chatEndRef.current !== null){
+            chatEndRef.current.scrollIntoView({
+                behavior: "smooth"
+            })
+        }
+
+    }
+    useEffect(ScrollToBottom, [data])
+
     if (error) return "An error has occurred.";
     if (!data) return "Loading...";
+        
     return (
         // <ScrollToBottom className="myscroll">
-        <div className="card h-50 d-inline-block border border-primary mb-3" >
+        <div className="card h-50 d-inline-block border border-primary mb-3" style={{minWidth: "-webkit-fill-available"}}>
             
             <ul class="list-group list-group-flush">
                 {
@@ -39,6 +45,8 @@ const PreviousMessages = ({conversationUuid}) => {
                 }
 
             </ul>
+            <div ref={chatEndRef}/>
+
         </div>
         // </ScrollToBottom>
 

@@ -30,7 +30,7 @@ const MessageInput = ({ conversationUuid }) => {
           <input type="text" value={currentMessage} onChange={e => setCurrentMessage(e.target.value)} class="form-control" id="inlineFormInputGroupUsername" placeholder="Enter your question to the patient" />
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-8 mt-1">
         <button type="submit" class="btn btn-primary">Ask Chameleon!</button>
       </div>
     </form>

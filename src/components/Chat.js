@@ -19,7 +19,7 @@ const Chat = () => {
                 <Buttons conversationUuid={conversationUuid} />
             </div>
 
-            <div className="col-7">
+            <div className="col-6">
                 <PreviousMessages messages={messages} conversationUuid={conversationUuid} />
                 <MessageInput conversationUuid={conversationUuid} />
             </div>
