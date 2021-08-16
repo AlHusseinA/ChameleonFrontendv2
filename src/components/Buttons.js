@@ -28,7 +28,7 @@ const EventButtons = ({ conversationUuid }) => {
         break;
 
       case 5:
-        currentButtonMessage = "Ideas, Concerns, and Expectations";
+        currentButtonMessage = "Let's discuss Ideas, Concerns, and Expectations";
         break;
       // case 6:
       //   currentButtonMessage = "Functional Enquiry";
@@ -75,9 +75,9 @@ const EventButtons = ({ conversationUuid }) => {
 
         </div>
         <br /><h5><b> Patient info:</b></h5>
-        <p><b>Name:</b> John Doe.</p>
-        <p><b>Gender:</b> Male.</p>
-        <p><b>Age:</b> 43.</p>
+        <p><b>Name:</b> John Doe</p>
+        <p><b>Gender:</b> Male</p>
+        <p><b>Age:</b> 43</p>
         <p><b>DOB:</b> 06/02/1969</p>
         <p><b>Presenting Complaint:</b> Injured lower back while exercising.</p>
       </div>

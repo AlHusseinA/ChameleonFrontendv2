@@ -21,6 +21,7 @@ const Chat = () => {
 
             <div className="col-6">
                 <PreviousMessages messages={messages} conversationUuid={conversationUuid} />
+                
                 <MessageInput conversationUuid={conversationUuid} />
             </div>
 

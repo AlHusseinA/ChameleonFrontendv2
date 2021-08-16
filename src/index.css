@@ -26,7 +26,9 @@ header {
   grid-column: 1 / 4;
 
 }
-
+/* card.d-inline-block.border.border-primary.mb-3 {
+  height: 120px;
+} */
 
 
 .left-side {
