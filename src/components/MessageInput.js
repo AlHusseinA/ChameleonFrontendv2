@@ -27,7 +27,7 @@ const MessageInput = ({ conversationUuid }) => {
       <div class="col-12">
         <label class="visually-hidden" for="inlineFormInputGroupUsername">Enter your question to the patient</label>
         <div class="input-group">
-          <input type="text" value={currentMessage} onChange={e => setCurrentMessage(e.target.value)} class="form-control" id="inlineFormInputGroupUsername" placeholder="Enter your question to the patient" />
+          <input type="text" value={currentMessage} onChange={e => setCurrentMessage(e.target.value)} class="form-control" id="inlineFormInputGroupUsername" placeholder="Introduce yourself to the patient and offer assistance!" />
         </div>
       </div>
       <div class="col-8 mt-1">
