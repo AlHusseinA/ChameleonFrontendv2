@@ -5,7 +5,7 @@ const Navbar = () => {
         <div class="sidebar-sticky">
             <ul class="nav flex-column mb-2">
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://forms.office.com/Pages/ResponsePage.aspx?id=rRkrjJxf1EmQdz7Dz8UrP3otb1bby4RLqkR-2JPUdRdUNjZWNk1FVzQ0QjkxUDBaSTROSE5XWFBRWC4u">
+                    <a class="nav-link active" href="https://forms.office.com/Pages/ResponsePage.aspx?id=rRkrjJxf1EmQdz7Dz8UrP3otb1bby4RLqkR-2JPUdRdUNjZWNk1FVzQ0QjkxUDBaSTROSE5XWFBRWC4u" target="_blank">
                         <h6><b>Questionnaire (est. 6 minutes)</b></h6>
                     </a>
                     <a class="nav-link" href="/faqs">
