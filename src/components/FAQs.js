@@ -85,15 +85,8 @@ const FAQs = () => (
                     No. The picture you see was generated using an AI technique called SyleGAN. Visit: <a href="https://thispersondoesnotexist.com/" target="_blank">https://thispersondoesnotexist.com/</a> if you are interested.
                 </p></li>
 
-            <li class="list-group-item">        <h6 className="text-primary" style={{ textAlign: 'left' }, { fontWeight: 'bold' }}>XXXXXXXXXXXXXXXXXXXXXXXXXX</h6>
-                <p className="text-dark" style={{ textAlign: 'left' }}>
-                    XXXXXXXXXXXXXXXXXXXXXXXXXX
-                </p></li>
-
-            <li class="list-group-item">        <h6 className="text-primary" style={{ textAlign: 'left' }, { fontWeight: 'bold' }}>XXXXXXXXXXXXXXXXXXXXXXXXXX</h6>
-                <p className="text-dark" style={{ textAlign: 'left' }}>
-                    XXXXXXXXXXXXXXXXXXXXXXXXXX
-                </p></li>
+   <br /><br /><br /><br /><br /><br /><br />
+   
         </ul>
 
     </div>
