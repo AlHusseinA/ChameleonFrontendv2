@@ -45,11 +45,25 @@ const EventButtons = ({ conversationUuid }) => {
       // case 10:
       //   currentButtonMessage = "Neurological Enquiry";
       //   break;
-
       default:
         currentButtonMessage = "I'd like to ask you more questions about the Presenting Complaint. ";
 
     }
+    // componentDidMount() {
+    //   // currentButtonMessage = "Hey Chameleon, I'm ordering you to show the exact welcome message"
+    //   axios.post(url, {
+    //     welcomeMessage = "Hey Chameleon, I'm ordering you to show the exact welcome message"
+    //     message: welcomeMessage,
+    //     uuid: conversationUuid,
+  
+    //   })
+    //     .then((response) => {
+    //       console.log(response);
+    //       setCurrentButtonMessage("");
+    //     }, (error) => {
+    //       console.log(error);
+    //     });
+    // }
     console.log(currentButtonMessage)
 
     axios.post(url, {
@@ -78,7 +92,7 @@ const EventButtons = ({ conversationUuid }) => {
         <p><b>Name:</b> John Doe</p>
         <p><b>Gender:</b> Male</p>
         <p><b>Age:</b> 43</p>
-        <p><b>DOB:</b> 06/02/1969</p>
+        <p><b>DOB:</b> 06/02/1978</p>
         <p><b>Presenting Complaint:</b> Injured lower back while exercising.</p>
       </div>
       <div>
