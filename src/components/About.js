@@ -35,7 +35,7 @@ const About = () => (
                     </p><br />
                     <h6 style={{ textAlign: 'left' }, { fontWeight: 'bold' }}>DATA MANAGEMENT AND STORAGE</h6>
                     <p style={{ textAlign: 'left' }}>
-                        The data collected will be stored on Google Forms and deleted at the end of November 2021. I will not record any personal information such as names or email addresses, nor will I be asking any personal information at any point. The information collected is purely about the performance of the tool, your perception of it, and general comments about performance.
+                        The data collected will be stored on a University of Aberdeen secure account and deleted at the end of November 2021. I will not record any personal information such as names or email addresses, nor will I be asking any personal information at any point. The information collected is purely about the performance of the tool, your perception of it, and general comments about performance.
                     </p>
                     <p style={{ textAlign: 'left' }}>
                         To the best of our knowledge, the nature of the questions will not allow any retrospective identification of the users.
