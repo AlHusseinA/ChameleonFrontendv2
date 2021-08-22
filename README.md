@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# React frontend for https://chameleonpatients.co.uk/
+
+This was part of my AI MSc's summer research project.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
