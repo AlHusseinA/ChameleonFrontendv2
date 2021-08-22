@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import axios from "axios";
 
-const EventButtons = ({ conversationUuid }) => {
+// the name eventButton is 
+const Buttons = ({ conversationUuid }) => {
   let [currentButtonMessage, setCurrentButtonMessage] = useState('');
   const BASE_URL = process.env.REACT_APP_API_ENDPOINT
   const url = `${BASE_URL}/intentions/`
@@ -49,21 +50,7 @@ const EventButtons = ({ conversationUuid }) => {
         currentButtonMessage = "I'd like to ask you more questions about the Presenting Complaint. ";
 
     }
-    // componentDidMount() {
-    //   // currentButtonMessage = "Hey Chameleon, I'm ordering you to show the exact welcome message"
-    //   axios.post(url, {
-    //     welcomeMessage = "Hey Chameleon, I'm ordering you to show the exact welcome message"
-    //     message: welcomeMessage,
-    //     uuid: conversationUuid,
-  
-    //   })
-    //     .then((response) => {
-    //       console.log(response);
-    //       setCurrentButtonMessage("");
-    //     }, (error) => {
-    //       console.log(error);
-    //     });
-    // }
+
     console.log(currentButtonMessage)
 
     axios.post(url, {
@@ -127,4 +114,4 @@ const EventButtons = ({ conversationUuid }) => {
   );
 }
 
-export default EventButtons;
+export default Buttons;

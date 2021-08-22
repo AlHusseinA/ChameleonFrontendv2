@@ -9,25 +9,22 @@ import FAQs from './components/FAQs';
 import Landing from './components/Landing';
 import './App.css';
 
+
 function App() {
-
-
   return (
     <div >
       <div >
-
         <Router>
           <Switch>
             <Route path="/chat">
-              <header>
+            {/* header from te 1-line css layout */}
+              <header>  
                 <Header />
               </header>
-              <main className="container-fluid">
+              {/* main from te 1-line css layout */}
+              <main className="container-fluid"> 
                 <Chat />
               </main>
-       
-                
-
             </Route>
             <Route path="/faqs">
               <FAQs />
@@ -38,10 +35,8 @@ function App() {
             <Route path="/">
               <Landing />
             </Route>
-
           </Switch>
         </Router>
-
       </div>
     </div>
   );

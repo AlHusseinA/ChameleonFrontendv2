@@ -2,18 +2,33 @@ import React, { useEffect, useRef } from "react";
 import useSWR from "swr";
 
 
+
+
+// this component will constantly display all previoua messages exchanged between the user (green) and
+// Chameleon (blue)
+
+
 const fetcher = url => fetch(url).then(res => res.json());
 
-
-
 const PreviousMessages = ({conversationUuid}) => {
+
+    // ChameleonBackendv3Docker-main\ChameleonBackendv3Docker-main\chatbot\config\urls.py
+    // Django side - line 26, path('messages/<conversation_uuid>', PreviousMessagesView.as_view()),
     const BASE_URL = process.env.REACT_APP_API_ENDPOINT 
     const url = `${BASE_URL}/messages/${conversationUuid}`
-    // let data = [];
+    // here url is the dialogflow endpoint containing the session id
+
+
+    // useSWR hook is used fetch the message history from the django backend
+    // data will contain the message history
+    // https://swr.vercel.app/ 
+
     const { data, error } = useSWR(
         url,
         fetcher, { refreshInterval: 1000 }
     );
+
+    //
     const chatEndRef = useRef(null);
     const ScrollToBottom = () =>{
         // debugger
@@ -45,10 +60,10 @@ const PreviousMessages = ({conversationUuid}) => {
                 }
 
             </ul>
-            <div ref={chatEndRef}/>
+            {/* // this is an imaginary div. Once it's reached (chaEndRef no longer null) then scrollIntoView */}
+            <div ref={chatEndRef}/> 
 
         </div>
-        // </ScrollToBottom>
 
     );
 

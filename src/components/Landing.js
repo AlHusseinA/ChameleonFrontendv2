@@ -4,8 +4,9 @@ import { useHistory } from 'react-router';
 import React from 'react'
 
 export default function Landing() {
-    let history = useHistory();
 
+        // when the user clicks the user consent button, the "/chat" page is rendered (and inside it the Chat.js, Header.Js, Navebar.js, and Buttons.js)
+    let history = useHistory();
     function handleClick() {
         history.push("/chat");
     }

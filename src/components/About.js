@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-
+// Static about page for more info about the project
 const About = () => (
     <div className="container">
     <div style={{ textAlign: 'center' }}>

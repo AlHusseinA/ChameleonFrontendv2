@@ -15,15 +15,15 @@ const Chat = () => {
         <div>
 
             <div className="container row justify-content-between">
-            <div className="col-3">
-                <Buttons conversationUuid={conversationUuid} />
-            </div>
+                <div className="col-3">
+                    <Buttons conversationUuid={conversationUuid} />
+                </div>
 
-            <div className="col-6">
-                <PreviousMessages messages={messages} conversationUuid={conversationUuid} />
-                
-                <MessageInput conversationUuid={conversationUuid} />
-            </div>
+                <div className="col-6">
+                    <PreviousMessages messages={messages} conversationUuid={conversationUuid} />
+
+                    <MessageInput conversationUuid={conversationUuid} />
+                </div>
 
 
             </div>
