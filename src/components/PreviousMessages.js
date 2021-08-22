@@ -22,7 +22,7 @@ const PreviousMessages = ({conversationUuid}) => {
     // useSWR hook is used fetch the message history from the django backend
     // data will contain the message history
     // https://swr.vercel.app/ 
-
+    // inside useSWR there'll be an arrow function (fetcher defined above) + a url for the api endpoint
     const { data, error } = useSWR(
         url,
         fetcher, { refreshInterval: 1000 }

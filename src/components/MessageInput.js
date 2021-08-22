@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 // MessageInput will take the user's utterance entered in the chat box, adds a unique uuid for that session, and sends it to the backend
-// 
+// conversationUuid is always created on client side and apssed on to the api
 
 const MessageInput = ({ conversationUuid }) => {
   const [currentMessage, setCurrentMessage] = useState('');
